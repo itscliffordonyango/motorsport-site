@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Motorsport Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="preloader"><div class="spinner"></div></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><i class="fas fa-fire"></i> Motorsport Hub</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="f1.html" class="nav-link">Formula 1</a></li>
+                <li><a href="motogp.html" class="nav-link">MotoGP</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="/assets/videos/gall-vid.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <h1 class="hero-title animate-slide-up">Media Gallery</h1>
+                <p class="hero-subtitle animate-slide-up delay-1">Best moments from F1 and MotoGP</p>
+            </div>
+        </section>
+
+        <section class="gallery section-padding">
+            <div class="container">
+                <h2 class="section-title">📸 Photo Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-src="assets/images/monaco.jpeg" data-type="image">
+<img 
+  src="assets/images/monaco.jpeg"
+  data-src="assets/images/monaco.jpeg"
+  alt="Monaco Victory"
+  class="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Monaco 2024</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/images/f1.jpeg" data-type="image">
+<img 
+  src="assets/images/f1.jpeg"
+  data-src="assets/images/f1.jpeg"
+  alt="F1 Start"
+  class="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Grid Start</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/images/mtgp.jpeg" data-type="image">
+<img 
+  src="assets/images/mtgp.jpeg"
+  data-src="assets/images/mtgp.jpeg"
+  alt="MotoGP Corner"
+  class="lazy">
+                        <div class="gallery-overlay">
+                            <h3>MotoGP Lean</h3>
+                        </div>
+                    </div>
+                    <!-- Add more gallery items -->
+                    <div class="gallery-item" data-src="assets/images/Motor-gp.jpeg" data-type="image">
+<img src="assets/images/Motor-gp.jpeg" alt="Pit Stop" class="lazy" data-src="assets/images/Motor-gp.jpeg">
+                        <div class="gallery-overlay">
+                            <h3>Pit Action</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos section-padding">
+            <div class="container">
+                <h2 class="section-title">🎥 Video Highlights</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <video controls preload="metadata" class="video-player">
+                            <source src="assets/videos/charles.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Charles Leclerc Onboard</h3>
+                        <p>Feel the G-forces</p>
+                    </div>
+                    <div class="gallery-item" data-src="assets/videos/motor-gp.mp4" data-type="video">
+                        <video controls preload="metadata" class="video-player" style="width: 100%; height: auto;">
+                            <source src="assets/videos/motor-gp.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="gallery-overlay">
+                            <h3>MotoGP Highlights</h3>
+                        </div>
+                    </div>
+                    <!-- More videos -->
+
+                    <div class="gallery-item" data-src="assets/videos/motor-gp.mp4" data-type="video">
+                        <video controls preload="metadata" class="video-player" style="width: 100%; height: auto;">
+                            <source src="assets/videos/fly.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="gallery-overlay">
+                            <h3>MotoGP Highlights</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio section -->
+        <section class="video section-padding">
+            <div class="container">
+                <h2 class="section-title">🔊 Engine Sounds</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <video controls preload="metadata" class="video-player">
+                            <source src="assets/videos/engine.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>F1 V6 Turbo Revs</h3>
+                        <p>Hear the iconic scream</p>
+                    </div>
+                    <div class="video-card">
+                        <video controls preload="metadata" class="video-player">
+                            <source src="assets/videos/f1vids.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>F1 Engine Start</h3>
+                        <p>Startup sequence roar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content"></div>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+    <footer class="footer"><div class="container"><p>&copy; 2024 Motorsport Hub. High-res media gallery.</p></div></footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
